@@ -10,9 +10,13 @@ module.exports = {
   siteUrl: process.env.SITE_URL,
   pathPrefix: process.env.PATH_PREFIX,
   metadata: {
-    author: process.env.AUTHOR || "John Doe",
-    github: process.env.GITHUB_URL || "https://github.com/octocat",
-    linkedin: process.env.LINKEDIN_URL || "https://www.linkedin.com/in/john-doe",
+    author: process.env.SITE_AUTHOR || "John Doe",
+    github: process.env.GITHUB_URL || "https://github.com",
+    linkedin: process.env.LINKEDIN_URL || "https://www.linkedin.com",
+    twitter: process.env.TWITTER_URL || "https://www.twitter.com",
+    journal: process.env.JOURNAL_URL || "https://wordpress.com/",
+    blog: process.env.BLOG_URL || "https://dev.to/",
+    telegram: process.env.TELEGRAM_URL || "https://telegram.org/",
   },
   plugins: [
     {
