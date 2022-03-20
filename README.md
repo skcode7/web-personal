@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d31e5f0a-0727-4f3a-9c8e-51099b1ba3fd/deploy-status)](https://app.netlify.com/sites/web-carlos-encalada/deploys)
+
 # gridsome-starter-scroll
 
 Gridsome Starter Portfolio by Markus Hunsalz 
