@@ -1,5 +1,7 @@
 # gridsome-starter-scroll
 
+Gridsome Starter Portfolio by Markus Hunsalz 
+
 > gridsome-starter-scroll is build with [Gridsome](https://gridsome.org)
 
 ## Built with
