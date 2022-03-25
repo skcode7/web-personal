@@ -1,6 +1,6 @@
 ---
 company: 'COIN JIH'
-from: '2009-05'
+from: '2008-05'
 to: '2020-12'
 ---
 Empecé como Programador Junior y fuí avanzando hasta llegar a Gerente de Desarrollo.<br>

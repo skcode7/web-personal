@@ -165,70 +165,16 @@
                 desarrollar un nuevo aplicativo, estoy a las órdenes.
               </p>
             </div>
-            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <Contact class="lg:w-1/2 md:w-2/3 mx-auto" />
+
               <div class="flex flex-wrap">
-                <div class="p-2 w-1/2">
-                  <div class="relative">
-                    <label for="name" class="leading-7 text-xs md:text-base">
-                      Nombre
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      class="text-input bg-gray-50 dark:bg-gray-100"
-                    />
-                  </div>
-                </div>
-                <div class="p-2 w-1/2">
-                  <div class="relative">
-                    <label for="email" class="leading-7 text-xs md:text-base">
-                      eMail
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      class="text-input bg-gray-50 dark:bg-gray-100"
-                    />
-                  </div>
-                </div>
-                <div class="p-2 pb-4 w-full">
-                  <div class="relative">
-                    <label for="message" class="leading-7 text-xs md:text-base">
-                      Mensaje
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      class="text-input h-32 bg-gray-50 dark:bg-gray-100"
-                    >
-                    </textarea>
-                  </div>
-                </div>
-                <div class="p-2 pb-4 w-full border-b-1">
-                  <button class="btn bg-content-highlight">
-                    Enviar
-                  </button>
-                </div>
                 <Social class="mt-4 w-full" />
               </div>
-            </div>
           </div>
         </div>
       </section>
 
-      <form name="contact" netlify>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+      
     </div>
   </Layout>
 </template>
@@ -274,6 +220,7 @@ import GithubIcon from "vue-material-design-icons/Github"
 import OpenInNewIcon from "vue-material-design-icons/OpenInNew"
 import HtmlIcon from "vue-material-design-icons/LanguageHtml5"
 import Social from "~/components/Social.vue"
+import Contact from "~/components/Contact.vue"
 
 export default {
   components: {
@@ -281,6 +228,7 @@ export default {
     OpenInNewIcon,
     HtmlIcon,
     Social,
+    Contact,
   },
 }
 </script>

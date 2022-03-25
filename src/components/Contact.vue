@@ -1,0 +1,12 @@
+<template>
+  <iframe
+  src="https://tally.so/embed/3jRBR3?hideTitle=1&transparentBackground=1"
+  width="100%"
+  height="550"
+  frameborder="0"
+  marginheight="0"
+  marginwidth="0"
+  title="Contacto
+">
+</iframe>
+</template>
