@@ -1,0 +1,523 @@
+:root {
+  --color-header-color: #e3f1fc;
+  --color-header-background: #00616e;
+  --color-header-highlight: #ffffff;
+  --color-content-color: #45474d;
+  --color-content-background: #e5e8ee;
+  --color-content-highlight: #ffffff;
+  --color-scenery: #bec5d7;
+  --font-family: 'Overpass', 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+html.dark {
+  --color-header-color: #f4fcfe;
+  --color-header-background: #00616e;
+  --color-header-highlight: #dd9023;
+  --color-content-color: #edeef1;
+  --color-content-background: #81879c;
+  --color-content-highlight: #dd9023;
+  --color-scenery: #474d60;
+}
+
+* {
+  transition-property: color, background-color, border-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-content-color);
+  background-color: var(--color-scenery);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-content-color);
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: var(--color-header-background);
+  color: var(--color-header-color);
+  padding: 1rem 0.5rem;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-branding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--color-header-color);
+  white-space: nowrap;
+}
+
+.menu-toggle,
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--color-header-color);
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle i {
+  font-size: 1.25rem;
+}
+
+.main-nav {
+  width: 100%;
+  display: none;
+  margin-top: 0.5rem;
+}
+
+.main-nav.open {
+  display: block;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  color: var(--color-header-color);
+  font-size: 1rem;
+  padding: 0.25rem 0;
+  display: inline-block;
+}
+
+.nav-link.active {
+  color: var(--color-header-highlight);
+  font-weight: bold;
+}
+
+.desktop-only {
+  display: none;
+}
+
+/* Main */
+.site-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--color-scenery);
+}
+
+.section {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 4px solid var(--color-scenery);
+  background-color: var(--color-content-background);
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+/* About */
+.about-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-profile {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.profile-img {
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.profile-name {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.profile-role {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.about-bio {
+  width: 100%;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-content-color);
+}
+
+.about-bio p {
+  font-size: 0.75rem;
+  line-height: 1.625;
+  margin-bottom: 1rem;
+}
+
+.about-bio p:last-child {
+  margin-bottom: 0;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  display: flex;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  flex-shrink: 0;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.timeline-marker::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: var(--color-content-color);
+  transform: translateX(-50%);
+}
+
+.timeline-item:last-child .timeline-marker::before {
+  display: none;
+}
+
+.timeline-date {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--color-content-highlight);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  flex-grow: 1;
+  padding-left: 1rem;
+}
+
+.timeline-content h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-content p {
+  font-size: 0.875rem;
+  line-height: 1.625;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-content a {
+  text-decoration: underline;
+}
+
+/* Projects */
+.section-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.projects-grid {
+  justify-content: center;
+}
+
+.project-card {
+  padding: 0.75rem;
+}
+
+.project-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-info h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.project-info p {
+  font-size: 0.875rem;
+  line-height: 1.625;
+  margin: 0;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.project-links a {
+  font-size: 1.5rem;
+  color: var(--color-content-color);
+}
+
+.project-links a:hover {
+  opacity: 0.7;
+}
+
+/* Contact */
+.contact-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-header h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contact-header p {
+  font-size: 0.875rem;
+  line-height: 1.625;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.contact-form iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  color: var(--color-content-color);
+  transition: opacity 200ms ease;
+}
+
+.social-links a:hover {
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .site-header {
+    padding: 1.5rem 6rem;
+  }
+
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-branding {
+    width: auto;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: flex;
+  }
+
+  .main-nav {
+    display: block;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.125rem;
+  }
+
+  .container {
+    padding: 5rem 1.5rem;
+  }
+
+  .section {
+    min-height: 100vh;
+  }
+
+  .about-grid {
+    flex-direction: row;
+    align-items: center;
+    margin: 0 2rem;
+  }
+
+  .about-profile {
+    width: 33.333%;
+    margin-bottom: 0;
+  }
+
+  .profile-img {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .about-bio {
+    width: 66.667%;
+    padding-top: 0;
+    padding-left: 2rem;
+    border-top: none;
+    border-left: 1px solid var(--color-content-color);
+  }
+
+  .about-bio p {
+    font-size: 1rem;
+  }
+
+  .timeline-marker {
+    width: 112px;
+  }
+
+  .timeline-date {
+    width: 112px;
+    height: 112px;
+    font-size: 0.875rem;
+  }
+
+  .timeline-content {
+    padding-left: 2rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.125rem;
+  }
+
+  .timeline-content p {
+    font-size: 1rem;
+  }
+
+  .project-inner {
+    flex-direction: column;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+
+  .section-header h2,
+  .contact-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .contact-header p,
+  .project-info p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-title {
+    font-size: 1.875rem;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+  }
+}
