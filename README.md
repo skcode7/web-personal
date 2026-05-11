@@ -1,6 +1,6 @@
-# Web Personal de Carlos Encalada
+# Web Personal
 
-Sitio web personal estático construido con HTML, CSS y JavaScript vanilla.
+Sitio web personal estático construido con HTML, Pure CSS y JavaScript vanilla.
 
 ## Stack
 
