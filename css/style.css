@@ -377,44 +377,176 @@ html.dark .timeline-content a {
 }
 
 .projects-grid {
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .project-card {
-  padding: 0.75rem;
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: var(--color-scenery);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 250ms cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 250ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.project-inner {
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.project-card-inner {
+  position: relative;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
+  min-height: 240px;
+  z-index: 1;
 }
 
-.project-info h3 {
-  font-size: 1.125rem;
-  font-weight: 500;
-  margin-bottom: 0.25rem;
-}
-
-.project-info p {
-  font-size: 0.875rem;
-  line-height: 1.625;
-  margin: 0;
-}
-
-.project-links {
+.project-card-top {
   display: flex;
-  gap: 0.75rem;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.project-links a {
-  font-size: 1.5rem;
+.project-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.project-icon-fact { background-color: #00616e; }
+.project-icon-infra { background-color: #dd9023; }
+.project-icon-erp { background-color: #45474d; }
+.project-icon-systec { background-color: #6c757d; }
+.project-icon-auth { background-color: #198754; }
+.project-icon-audit { background-color: #0d6efd; }
+
+.project-status {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--color-content-color);
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.project-card-body {
+  flex: 1;
+}
+
+.project-category {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-content-color);
+  opacity: 0.55;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+.project-card-body h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
   color: var(--color-content-color);
 }
 
-.project-links a:hover {
-  opacity: 0.7;
+.project-card-body p {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  margin: 0;
+  color: var(--color-content-color);
+  opacity: 0.85;
+}
+
+.project-card-footer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-card-footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-content-background);
+  color: var(--color-content-color);
+  font-size: 1rem;
+  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+
+.project-card-footer a:hover {
+  background-color: var(--color-header-background);
+  color: var(--color-header-color);
+  transform: scale(1.08);
+}
+
+.project-decoration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  height: 140px;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.decoration-waves {
+  background: radial-gradient(circle at 100% 100%, var(--color-header-background) 0%, transparent 60%);
+}
+
+.decoration-dots {
+  background: radial-gradient(circle, var(--color-header-background) 1.5px, transparent 2px);
+  background-size: 10px 10px;
+}
+
+.decoration-lines {
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 4px,
+    var(--color-header-background) 4px,
+    var(--color-header-background) 5px
+  );
+  clip-path: circle(70% at 100% 100%);
+}
+
+.decoration-circles {
+  background: radial-gradient(circle at 100% 100%, var(--color-header-background) 0%, transparent 50%);
+}
+
+.decoration-grid {
+  background-image:
+    linear-gradient(var(--color-header-background) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-header-background) 1px, transparent 1px);
+  background-size: 14px 14px;
+  opacity: 0.06;
+}
+
+.decoration-zigzag {
+  background:
+    linear-gradient(135deg, var(--color-header-background) 20%, transparent 20%) -8px 0,
+    linear-gradient(225deg, var(--color-header-background) 20%, transparent 20%) -8px 0;
+  background-size: 16px 16px;
+  opacity: 0.08;
 }
 
 /* Contact */
@@ -645,22 +777,17 @@ html.dark .timeline-content a {
     font-size: 0.9rem;
   }
 
-  .project-inner {
-    flex-direction: column;
-  }
-
-  .project-links {
-    justify-content: center;
-  }
-
   .section-header h2,
   .contact-header h2 {
     font-size: 1.25rem;
   }
 
-  .contact-header p,
-  .project-info p {
+  .contact-header p {
     font-size: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -671,5 +798,9 @@ html.dark .timeline-content a {
 
   .nav-link {
     font-size: 1.25rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
