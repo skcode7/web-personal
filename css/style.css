@@ -765,7 +765,8 @@ html.dark .tag-teal { color: var(--teal); }
 .timeline-marker {
   position: absolute;
   left: -2.5rem;
-  top: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
@@ -784,7 +785,7 @@ html.dark .tag-teal { color: var(--teal); }
 .timeline-item:hover .timeline-marker {
   background-color: var(--teal);
   color: #fff;
-  transform: scale(1.08);
+  transform: translateY(-50%) scale(1.08);
 }
 
 .timeline-card {
@@ -1305,8 +1306,8 @@ html.dark .project-accent-green  .project-category { color: var(--green); }
 
   .timeline-marker {
     left: 50%;
-    transform: translateX(-50%);
-    top: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 2.75rem;
     height: 2.75rem;
     background-color: var(--surface);
@@ -1318,7 +1319,7 @@ html.dark .project-accent-green  .project-category { color: var(--green); }
   }
 
   .timeline-item:hover .timeline-marker {
-    transform: translateX(-50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.1);
   }
 
   .timeline-card {
