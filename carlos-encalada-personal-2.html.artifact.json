@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Carlos Encalada — sitio personal rediseñado",
+  "entry": "carlos-encalada-personal-2.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-05-14T15:52:21.968Z",
+  "updatedAt": "2026-05-14T15:52:21.986Z",
+  "metadata": {
+    "identifier": "carlos-encalada-personal",
+    "artifactType": "text/html",
+    "inferred": false
+  }
+}
