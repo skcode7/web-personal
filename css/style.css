@@ -1369,7 +1369,7 @@ html.dark .project-accent-green  .project-category { color: var(--green); }
   .hero-strip {
     flex-wrap: nowrap;
     overflow-x: auto;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1.4rem 2rem;
     scrollbar-width: none;
   }
