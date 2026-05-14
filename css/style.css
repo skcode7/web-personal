@@ -1310,8 +1310,8 @@ html.dark .project-accent-green  .project-category { color: var(--green); }
 
   .timeline-marker {
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 0.5rem;
+    transform: translateX(-50%);
     width: 2.75rem;
     height: 2.75rem;
     background-color: var(--surface);
@@ -1323,7 +1323,7 @@ html.dark .project-accent-green  .project-category { color: var(--green); }
   }
 
   .timeline-item:hover .timeline-marker {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translateX(-50%) scale(1.1);
   }
 
   .timeline-card {
