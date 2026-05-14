@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="es"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Encalada — Hacedor de Software</title>
+  <meta name="description" content="Carlos Encalada — Hacedor de Software con 15+ años construyendo soluciones empresariales, ERPs y sistemas críticos para operaciones de negocio.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;family=Overpass:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-branding">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          <i class="bi bi-list"></i>
+        </button>
+        <a href="./" class="site-title">
+          <span class="site-title-mark">C</span><span class="site-title-rest">arlos Encalada</span>
+        </a>
+        <button class="theme-toggle mobile-only" id="themeToggleMobile" aria-label="Cambiar tema">
+          <i class="bi bi-brightness-high-fill"></i>
+        </button>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">about</a></li>
+          <li><a href="#experiences" class="nav-link">experiencia</a></li>
+          <li><a href="#projects" class="nav-link">proyectos</a></li>
+          <li><a href="#contact" class="nav-link">contacto</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle desktop-only" id="themeToggleDesktop" aria-label="Cambiar tema">
+        <i class="bi bi-brightness-high-fill"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- Hero -->
+    <section class="section section-hero" aria-label="Introducción">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <span class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Hola, soy Charly
+          </span>
+          <h1 class="hero-title">
+            Hago <em>software</em> que<br>
+            <em>resuelve</em> el problema<br>
+            antes que la tecnología.
+          </h1>
+          <p class="hero-lede">
+            <strong>15+ años</strong> diseñando ERPs, sistemas críticos y aplicaciones a medida para empresas manufactureras y de servicios. Padre, curioso, y un poco terco con la calidad.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">
+              Conversemos
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#projects" class="btn btn-ghost">
+              Ver proyectos
+            </a>
+          </div>
+        </div>
+        <div class="hero-portrait">
+          <svg class="hero-sunburst" viewBox="0 0 220 220" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="110" y1="10" x2="110" y2="40"></line>
+              <line x1="110" y1="180" x2="110" y2="210"></line>
+              <line x1="10" y1="110" x2="40" y2="110"></line>
+              <line x1="180" y1="110" x2="210" y2="110"></line>
+              <line x1="40" y1="40" x2="62" y2="62"></line>
+              <line x1="158" y1="158" x2="180" y2="180"></line>
+              <line x1="40" y1="180" x2="62" y2="158"></line>
+              <line x1="158" y1="62" x2="180" y2="40"></line>
+              <line x1="75" y1="18" x2="83" y2="44"></line>
+              <line x1="137" y1="176" x2="145" y2="202"></line>
+              <line x1="18" y1="75" x2="44" y2="83"></line>
+              <line x1="176" y1="137" x2="202" y2="145"></line>
+              <line x1="145" y1="18" x2="137" y2="44"></line>
+              <line x1="83" y1="176" x2="75" y2="202"></line>
+              <line x1="18" y1="145" x2="44" y2="137"></line>
+              <line x1="176" y1="83" x2="202" y2="75"></line>
+            </g>
+          </svg>
+          <div class="hero-portrait-frame">
+            <img src="foto.jpg" alt="Foto de Carlos Encalada" class="hero-portrait-img">
+          </div>
+          <div class="hero-portrait-badge">
+            <span class="badge-line">desde</span>
+            <span class="badge-num">2008</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-strip" aria-hidden="true">
+        <span>GeneXus</span>
+        <span class="strip-dot">✱</span>
+        <span>ERP</span>
+        <span class="strip-dot">✱</span>
+        <span>Facturación electrónica</span>
+        <span class="strip-dot">✱</span>
+        <span>Arquitectura</span>
+        <span class="strip-dot">✱</span>
+        <span>Manufactura</span>
+        <span class="strip-dot">✱</span>
+        <span>Nómina</span>
+        <span class="strip-dot">✱</span>
+        <span>SaaS</span>
+        <span class="strip-dot">✱</span>
+        <span>DevOps</span>
+        <span class="strip-dot">✱</span>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-about">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-index">01 / Sobre mí</span>
+          <h2 class="section-title">Hacedor de software, no de promesas.</h2>
+        </div>
+        <div class="about-grid">
+          <aside class="about-aside">
+            <div class="about-card">
+              <div class="about-card-row">
+                <span class="about-card-label">Rol</span>
+                <span class="about-card-value">Hacedor de Software</span>
+              </div>
+              <div class="about-card-row">
+                <span class="about-card-label">Base</span>
+                <span class="about-card-value">Ecuador 🇪🇨</span>
+              </div>
+              <div class="about-card-row">
+                <span class="about-card-label">Stack</span>
+                <span class="about-card-value">GeneXus · .NET · Web</span>
+              </div>
+              <div class="about-card-row">
+                <span class="about-card-label">Foco</span>
+                <span class="about-card-value">ERP · Manufactura</span>
+              </div>
+              <div class="about-card-row about-card-row-tag">
+                <span class="tag tag-teal">#SoyDeveloper</span>
+                <span class="tag tag-coral">#Dadveloper</span>
+              </div>
+            </div>
+          </aside>
+          <div class="about-bio">
+            <p>
+              <strong>#SoyDeveloper</strong> con más de <strong>15 años de experiencia</strong> construyendo <strong>soluciones empresariales</strong>, especialmente en entornos <strong>ERP</strong> y <strong>sistemas críticos</strong> para operaciones de negocio.
+            </p>
+            <p>
+              También soy padre —o como me gusta decir, <strong>Dadveloper</strong>—, y he logrado integrar ambas facetas en una rutina <strong>disciplinada</strong> que me permite mantener un alto nivel de <strong>enfoque, cumplimiento y calidad</strong> en cada proyecto.
+            </p>
+            <p>
+              Mi herramienta principal ha sido <strong>GeneXus</strong>, tecnología con la que he trabajado a lo largo de múltiples versiones, desarrollando una base sólida en <strong>arquitectura, modelado y desarrollo de sistemas escalables</strong>. En paralelo, he expandido mi <strong>stack</strong> hacia otras tecnologías, lenguajes y enfoques modernos.
+            </p>
+            <p>
+              He trabajado principalmente con empresas del sector <strong>manufacturero</strong>, diseñando software a medida que optimiza <strong>nómina, inventario, costos y logística</strong>. Entender el <em>problema</em> antes que la tecnología, y construir soluciones que realmente generen <strong>impacto</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experiences" class="section section-experiences">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-index">02 / Trayectoria</span>
+          <h2 class="section-title">Dónde he estado <em>haciendo</em>.</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <article class="timeline-item timeline-left">
+            <div class="timeline-marker">
+              <i class="bi bi-rocket-takeoff"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-arrow" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2021 — hoy</span>
+                <h3>EncDia — Software Empresarial a Medida</h3>
+                <p>Emprendimiento con el que ofrezco servicios a empresas. Desarrollos a medida, gestión de proyectos tecnológicos, consultoría especializada (ERPs, Nómina, Facturación Electrónica).</p>
+                <p>Más detalles en <a href="https://encaladadiaz.com" target="_blank" rel="noopener noreferrer">encaladadiaz.com</a>.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-right">
+            <div class="timeline-marker">
+              <i class="bi bi-stars"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-arrow" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2017 — 2019</span>
+                <h3>PlusServ</h3>
+                <p>Implementación de Canorus ERP en empresas de Colombia y administración de servidores de desarrollo, base de datos y aplicaciones.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-left">
+            <div class="timeline-marker">
+              <i class="bi bi-house-door"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-arrow" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2008 — 2020</span>
+                <h3>COIN JIH</h3>
+                <p>Empecé como Programador Junior y avancé hasta Gerente de Desarrollo.</p>
+                <p>A cargo del diseño, desarrollo e implementación de Nómina, Canorus ERP, Conciliación Bancaria, Control de Costos y Gestión de Exportaciones, entre otros.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-projects">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-index">03 / Proyectos</span>
+          <h2 class="section-title">Cosas que he <em>construido</em>.</h2>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card project-accent-teal">
+            <div class="project-card-inner">
+              <header class="project-card-top">
+                <div class="project-icon">
+                  <i class="bi bi-receipt-cutoff"></i>
+                </div>
+                <span class="project-status">SaaS</span>
+              </header>
+              <div class="project-card-body">
+                <span class="project-category">Aplicación Web</span>
+                <h3>Facturación Electrónica</h3>
+                <p>Sistema integral para la generación y administración de comprobantes electrónicos cumpliendo con la normativa vigente.</p>
+              </div>
+              <footer class="project-card-footer">
+                <a class="project-link" href="https://facturacion.encaladadiaz.com/" target="_blank" rel="noopener noreferrer">
+                  Ver proyecto
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </footer>
+              <div class="project-decoration decoration-waves" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="project-card project-accent-coral">
+            <div class="project-card-inner">
+              <header class="project-card-top">
+                <div class="project-icon">
+                  <i class="bi bi-hdd-network"></i>
+                </div>
+                <span class="project-status">Open Source</span>
+              </header>
+              <div class="project-card-body">
+                <span class="project-category">DevOps</span>
+                <h3>Infraestructura</h3>
+                <p>Stack de servicios autogestionados con Docker, monitoreo en tiempo real y despliegues automatizados.</p>
+              </div>
+              <footer class="project-card-footer">
+                <a class="project-link" href="https://gitlab.com/karloskode/infraestructura-encdia" target="_blank" rel="noopener noreferrer">
+                  Ver código
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a class="project-link project-link-ghost" href="https://monitor.encaladadiaz.com/" target="_blank" rel="noopener noreferrer">
+                  Monitoreo
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </footer>
+              <div class="project-decoration decoration-dots" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="project-card project-accent-yellow">
+            <div class="project-card-inner">
+              <header class="project-card-top">
+                <div class="project-icon">
+                  <i class="bi bi-building-gear"></i>
+                </div>
+                <span class="project-status">SaaS</span>
+              </header>
+              <div class="project-card-body">
+                <span class="project-category">ERP</span>
+                <h3>IARPI</h3>
+                <p>Plataforma ERP ligera diseñada para emprendedores y pequeñas empresas que necesitan gestionar sus operaciones.</p>
+              </div>
+              <footer class="project-card-footer">
+                <a class="project-link" href="https://app.iarpi.ec/login?encdia" target="_blank" rel="noopener noreferrer">
+                  Ver proyecto
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </footer>
+              <div class="project-decoration decoration-lines" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="project-card project-accent-green">
+            <div class="project-card-inner">
+              <header class="project-card-top">
+                <div class="project-icon">
+                  <i class="bi bi-tools"></i>
+                </div>
+                <span class="project-status">On Premise</span>
+              </header>
+              <div class="project-card-body">
+                <span class="project-category">Aplicación Web</span>
+                <h3>SysTec</h3>
+                <p>Sistema completo para la gestión de centros de reparación técnica, seguimiento de órdenes y control de inventario.</p>
+              </div>
+              <footer class="project-card-footer">
+                <a class="project-link" href="https://facturacion.encaladadiaz.com/encdia/login.aspx" target="_blank" rel="noopener noreferrer">
+                  Ver proyecto
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </footer>
+              <div class="project-decoration decoration-circles" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="project-card project-accent-teal">
+            <div class="project-card-inner">
+              <header class="project-card-top">
+                <div class="project-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <span class="project-status">SaaS</span>
+              </header>
+              <div class="project-card-body">
+                <span class="project-category">IAM</span>
+                <h3>Authentico</h3>
+                <p>Sistema de autenticación y control de acceso para aplicaciones modernas con soporte multi-factor.</p>
+              </div>
+              <footer class="project-card-footer">
+                <a class="project-link" href="https://authentico.app/" target="_blank" rel="noopener noreferrer">
+                  Ver proyecto
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </footer>
+              <div class="project-decoration decoration-grid" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="project-card project-accent-coral">
+            <div class="project-card-inner">
+              <header class="project-card-top">
+                <div class="project-icon">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+                <span class="project-status">Open Source</span>
+              </header>
+              <div class="project-card-body">
+                <span class="project-category">API</span>
+                <h3>AuditTrail</h3>
+                <p>Librería para el registro y trazabilidad de auditoría en aplicaciones GeneXus, con soporte para múltiples fuentes de datos.</p>
+              </div>
+              <footer class="project-card-footer">
+                <a class="project-link" href="https://gitlab.com/ed_open/audit-trail" target="_blank" rel="noopener noreferrer">
+                  Ver código
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </footer>
+              <div class="project-decoration decoration-zigzag" aria-hidden="true"></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <span class="section-index">04 / Contacto</span>
+          <h2 class="section-title">¿Te puedo ayudar? <em>Escríbeme.</em></h2>
+          <p class="section-lede">
+            Ya sea que tengas un nuevo proyecto en mente, quieras dar mantenimiento a un sistema de misión crítica o desarrollar un nuevo aplicativo, estoy a las órdenes.
+          </p>
+        </div>
+        <div class="contact-form">
+          <iframe src="https://tally.so/embed/3jRBR3?hideTitle=1&amp;transparentBackground=1" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0" title="Formulario de contacto"></iframe>
+        </div>
+        <div class="social-block">
+          <span class="social-label">o por aquí</span>
+          <div class="social-links">
+            <a href="https://blog.karlosencalada.dev/" target="_blank" rel="noopener noreferrer" title="Blog" aria-label="Blog">
+              <i class="bi bi-pencil-square"></i>
+            </a>
+            <a href="https://github.com/skcode7" target="_blank" rel="noopener noreferrer" title="Github" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/carlos-encalada-4830b383/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/karlosrocker" target="_blank" rel="noopener noreferrer" title="X" aria-label="X (Twitter)">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://www.instagram.com/soy.charly_/" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://t.me/CharlyDev" target="_blank" rel="noopener noreferrer" title="Telegram" aria-label="Telegram">
+              <i class="bi bi-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="footerYear">2026</span> Carlos Encalada</span>
+        <span class="footer-sep">✱</span>
+        <span>Hecho con criterio en Ecuador</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/app.js"></script>
+
+
+</body></html>
