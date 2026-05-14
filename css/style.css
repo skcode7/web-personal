@@ -269,7 +269,7 @@ body, .site-header, .section, .timeline-card, .project-card,
 }
 
 .section-hero {
-  padding-top: 2.5rem;
+  padding-top: 1rem;
   padding-bottom: 0;
 }
 
@@ -379,7 +379,7 @@ body, .site-header, .section, .timeline-card, .project-card,
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
-  padding-top: 2rem;
+  padding-top: 0.8rem;
   padding-bottom: 3rem;
   align-items: center;
 }
