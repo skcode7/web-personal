@@ -573,6 +573,11 @@ body, .site-header, .section, .timeline-card, .project-card,
   line-height: 1.1;
 }
 
+html.dark .badge-line,
+html.dark .badge-num {
+  color: #2A3A42;
+}
+
 /* Hero marquee strip */
 .hero-strip {
   display: flex;
