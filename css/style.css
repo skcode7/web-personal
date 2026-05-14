@@ -1398,7 +1398,7 @@ html.dark .project-accent-green  .project-category { color: var(--green); }
 
   .hero-container {
     gap: 5rem;
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     padding-bottom: 6rem;
   }
 
