@@ -526,7 +526,7 @@ body, .site-header, .section, .timeline-card, .project-card,
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
-  background-color: var(--teal-pale);
+  background-color: var(--bg);
   box-shadow: var(--shadow-lg);
   border: 4px solid var(--surface);
   z-index: 2;
