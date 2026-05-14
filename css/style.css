@@ -619,7 +619,7 @@ html.dark .badge-num {
 }
 
 .hero-strip > span:not(.strip-dot) {
-  animation: strip-pulse 2.4s ease-in-out infinite;
+  animation: strip-pulse 5s ease-in-out infinite;
 }
 
 .hero-strip > span:nth-child(1)  { animation-delay: 0s; }
