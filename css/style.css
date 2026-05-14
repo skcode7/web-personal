@@ -846,6 +846,10 @@ html.dark .tag-teal { color: var(--teal); }
   border-radius: var(--r-pill);
 }
 
+html.dark .timeline-date {
+  color: var(--yellow);
+}
+
 .timeline-content p {
   font-size: 0.92rem;
   line-height: 1.65;
