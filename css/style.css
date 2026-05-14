@@ -1404,6 +1404,7 @@ html.dark .project-accent-green  .project-category { color: var(--green); }
     gap: 5rem;
     padding-top: 1rem;
     padding-bottom: 6rem;
+    align-items: start;
   }
 
   .hero-portrait {
