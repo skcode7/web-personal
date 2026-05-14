@@ -1396,9 +1396,13 @@ html.dark .project-accent-green  .project-category { color: var(--green); }
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .section-hero {
+    padding-top: 1rem;
+  }
+
   .hero-container {
     gap: 5rem;
-    padding-top: 2.5rem;
+    padding-top: 1rem;
     padding-bottom: 6rem;
   }
 
