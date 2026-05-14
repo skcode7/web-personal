@@ -102,8 +102,14 @@
     });
   }
 
+  function initFooterYear() {
+    const el = document.getElementById('footerYear');
+    if (el) el.textContent = new Date().getFullYear();
+  }
+
   initTheme();
   initMenu();
   initScrollspy();
   initSmoothScroll();
+  initFooterYear();
 })();
