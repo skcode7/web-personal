@@ -259,7 +259,7 @@ body, .site-header, .section, .timeline-card, .project-card,
 }
 
 .section {
-  padding: 4rem 0;
+  padding: 1.6rem 0;
   border-bottom: 1px solid var(--border-soft);
   background-color: var(--bg);
 }
@@ -1215,7 +1215,7 @@ html.dark .project-accent-green  .project-category { color: var(--green); }
 
 @media (min-width: 768px) {
   .section {
-    padding: 5.5rem 0;
+    padding: 2.2rem 0;
   }
 
   .header-inner {
@@ -1385,7 +1385,7 @@ html.dark .project-accent-green  .project-category { color: var(--green); }
 
 @media (min-width: 1024px) {
   .section {
-    padding: 7rem 0;
+    padding: 2.8rem 0;
   }
 
   .nav-link {
